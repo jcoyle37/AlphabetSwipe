@@ -1,4 +1,5 @@
-#AlphabetSwipe
+# AlphabetSwipe
+
 Game built in React and geared roughly towards children ages 2-4. Snag as many things as you can by correctly guessing their starting letter, then play with them.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
