@@ -37,8 +37,9 @@ class App extends Component {
     });
 
     this.state = {
-      availableLetters: ['t', 'n', 'o', 'd', 'g', 'm', 'a'], //only use words starting with these letters
-      numLettersToDisplay: 4, //number of letter buttons to show at bottom
+      availableLetters: ['t', 'n', 'o', 'd', 'g', 'm', 'a', 's'], //only use words starting with these letters
+      numLettersToDisplay: 4, //number of letter buttons to show at bottom (note: 'availableLetters' array
+                              //length must be equal to or greater than this number)
       numRounds: 10,
       awards: awardJSON.awards,
       currRound: 0,
@@ -47,7 +48,8 @@ class App extends Component {
 
     this.handleActivateAward = this.handleActivateAward.bind(this);
     this.handleSkipAward = this.handleSkipAward.bind(this);
-    this.handeRestartGame = this.handeRestartGame.bind(this);
+    this.handleRestartGame = this.handleRestartGame.bind(this);
+    this.handleEndGameEarly = this.handleEndGameEarly.bind(this);
     this.handleChangeView = this.handleChangeView.bind(this);
   }
   handleActivateAward(name) {
@@ -98,7 +100,7 @@ class App extends Component {
       window.$('button.letter').attr('disabled', false);
     }, 1000);
   }
-  handeRestartGame() {
+  handleRestartGame() {
     this.setState((currentState) => {
       return {
         awards: currentState.awards.map((award) => { //set all awards to unearned
@@ -110,6 +112,15 @@ class App extends Component {
         currRound: 0
       };
     });
+  }
+  handleEndGameEarly() {
+    this.setState((currentState) => {
+      return {
+        currRound: currentState.numRounds
+      };
+    });
+
+    alert("Congratulations...you've won all the awards!");
   }
   handleChangeView(newView) {
     this.setState((currentState) => {
@@ -156,7 +167,7 @@ class App extends Component {
 
             <button
               id='playAgainBtn'
-              onClick={this.handeRestartGame}
+              onClick={this.handleRestartGame}
             ></button>
           </div>
         )
@@ -180,6 +191,7 @@ class App extends Component {
               avlblLetters={this.state.availableLetters}
               handleActivateAward={this.handleActivateAward}
               handleSkipAward={this.handleSkipAward}
+              handleEndGameEarly={this.handleEndGame}
               numLettersToDisplay={this.state.numLettersToDisplay}
             />
 

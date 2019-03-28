@@ -5,6 +5,11 @@ export default function Award(props) {
   //create pool of awards that haven't been awarded yet
   const awardChoices = props.avlblAwards.filter((award) => award.awarded === false);
 
+  if(awardChoices.length === 0) {
+    props.handleEndGameEarly();
+    return null;
+  }
+
   let isAvlbl = false;
   let randomAward, firstLetter;
 
