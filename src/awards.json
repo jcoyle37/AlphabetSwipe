@@ -5,8 +5,36 @@
       "src": "https://openclipart.org/download/172354/apple-with-bite.svg"
     },
     {
+      "name": "airplane",
+      "src": "https://openclipart.org/download/179460/spitfire.svg"
+    },
+    {
+      "name": "airliner",
+      "src": "https://openclipart.org/download/183655/Airbus-a330.svg"
+    },
+    {
       "name": "dog",
       "src": "https://openclipart.org/download/284669/publicdomainq-dog_Saint_Bernard.svg"
+    },
+    {
+      "name": "drums",
+      "src": "https://openclipart.org/download/182946/Drums.svg"
+    },
+    {
+      "name": "doctor",
+      "src": "https://openclipart.org/download/305521/1534984599.svg"
+    },
+    {
+      "name": "duck",
+      "src": "https://openclipart.org/download/248173/Ente-coloured.svg"
+    },
+    {
+      "name": "guitar",
+      "src": "https://openclipart.org/download/270/TheresaKnott-electric-guitar.svg"
+    },
+    {
+      "name": "grapes",
+      "src": "https://openclipart.org/download/3657/stuuf-grapes.svg"
     },
     {
       "name": "giraffe",
@@ -17,12 +45,52 @@
       "src": "https://openclipart.org/download/225427/Monkey-Remix.svg"
     },
     {
+      "name": "money",
+      "src": "https://openclipart.org/download/2889/n-kamil-Money-banknotes-and-coin.svg"
+    },
+    {
+      "name": "moon",
+      "src": "https://openclipart.org/download/256857/The-Moon.svg"
+    },
+    {
+      "name": "nut",
+      "src": "https://openclipart.org/download/17617/lemmling-Cartoon-acorn.svg"
+    },
+    {
       "name": "notebook",
       "src": "https://openclipart.org/download/85273/spiral-notebook.svg"
     },
     {
+      "name": "noodles",
+      "src": "https://openclipart.org/download/209648/food-plain-noodles.svg"
+    },
+    {
       "name": "owl",
       "src": "https://openclipart.org/download/271863/Alvin-the-owl.svg"
+    },
+    {
+      "name": "orange juice",
+      "src": "https://openclipart.org/download/209151/drink-orange-juice.svg"
+    },
+    {
+      "name": "star",
+      "src": "https://openclipart.org/download/169071/stella.svg"
+    },
+    {
+      "name": "shirt",
+      "src": "https://openclipart.org/download/73765/T-Shirt-yelow.svg"
+    },
+    {
+      "name": "sheep",
+      "src": "https://openclipart.org/download/153061/schaefchen.svg"
+    },
+    {
+      "name": "tiger",
+      "src": "https://openclipart.org/download/34837/tigre05-architetto-fran-01r.svg"
+    },
+    {
+      "name": "truck",
+      "src": "https://openclipart.org/download/182969/Truck%201.svg"
     },
     {
       "name": "trolley",
