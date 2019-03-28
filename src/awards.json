@@ -1,0 +1,32 @@
+{
+  "awards": [
+    {
+      "name": "apple",
+      "src": "https://openclipart.org/download/172354/apple-with-bite.svg"
+    },
+    {
+      "name": "dog",
+      "src": "https://openclipart.org/download/284669/publicdomainq-dog_Saint_Bernard.svg"
+    },
+    {
+      "name": "giraffe",
+      "src": "https://openclipart.org/download/214356/Giraffe.svg"
+    },
+    {
+      "name": "monkey",
+      "src": "https://openclipart.org/download/225427/Monkey-Remix.svg"
+    },
+    {
+      "name": "notebook",
+      "src": "https://openclipart.org/download/85273/spiral-notebook.svg"
+    },
+    {
+      "name": "owl",
+      "src": "https://openclipart.org/download/271863/Alvin-the-owl.svg"
+    },
+    {
+      "name": "trolley",
+      "src": "https://openclipart.org/download/6948/SteveLambert-Milan-Streetcar.svg"
+    }
+  ]
+}

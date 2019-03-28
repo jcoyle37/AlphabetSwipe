@@ -1,0 +1,164 @@
+html {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 3px;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(https://openclipart.org/image/800px/svg_to_png/99229/a-paisaje-boceto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  cursor: pointer;
+}
+
+button#playAgainBtn {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: #ffd100;
+  bottom: 10px;
+  left: 10px;
+  position: absolute;
+  background-size: 100%;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAABbUlEQVR4Ae2aAUZEYRhFkyIoRBAIEUrm/Re0ggAESjtoB+2gHbSDBALQCgIIAQIQRCgEkS8koqnLc/oZ7rkAnN8wM3PeezMXQgghhBBCCCGEEALF1nK77O/BGPbag6q/h2FBZ+1dpcI8PWmbulV9rrcHQCd6VX2tpwdge7Vdq76vnweg7bdHlT+Y9wBsLOlc9XM9PAC7O+1eNW28h2dep3pTTR/vgRnW243q9/EelHagF9Vf4z0Ymyu6ULnxHrR0/HgPWjp+vActHT/eg5aOH+9BS8eP96Cl48d70NLx4z1o6fjxHrR0/HAPWzp+rAcvHT/OM4LhCHoBh96Tt9Bsf4gNkwnw9Wc9+SHzKaGnsQcDHoJhDYgw70lO+wuauxEHAx4MLQKXgt6Ti3r/4OfKH4x6eHSsZ38w78mtxVm5uQvU0lhPHnBQtdTZw9cS48lj1vG11NnD1xLlyZ89xtbSf3pCCCGEEEIIIYQQQvgAqa+vfjj8r00AAAAASUVORK5CYII=);
+  box-shadow: 0 0 9px 2px black;
+}
+
+button.changeViewBtn {
+  background: #00ffdc;
+  border: 2px solid black;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#progressBarContainer {
+  margin: 5px auto 0 auto;
+  width: 90%;
+  border: 2px solid black;
+  background: white;
+  height: 25px;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: #0F0;
+  transition: .5s;
+}
+
+img#awardDisplay {
+  width: 35vw;
+  max-width: 320px;
+  position: absolute;
+  padding: 0px 37%;
+  bottom: 20%;
+  right: 0;
+  animation-duration: 1s;
+  animation-name: slideIn;
+}
+
+@keyframes slideIn {
+  0% {
+    bottom: -50%;
+  }
+}
+
+@keyframes stashInBackpack {
+  100% {
+    width: 5vw;
+    padding: 0;
+    right: 9%;
+    bottom: 18vw;
+  }
+}
+
+@keyframes runAway {
+  100% {
+    right: 100%;
+  }
+}
+
+.letter {
+  border: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 10vw;
+  width: 100%;
+  box-shadow: inset 0 0 8px 0px black;
+  background-color: #ffa700;
+  color: black;
+}
+
+#letterContainer {
+  position: fixed;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  bottom: 0;
+  width: 100%;
+}
+
+#awardCollection {
+  display: block;
+}
+
+#awardCollection img.award {
+  width: 150px;
+  position: absolute;
+  animation-name: removeFromBackpack;
+  animation-duration: 1s;
+}
+
+@keyframes removeFromBackpack {
+  0% {
+    width: 5vw;
+    padding: 0;
+    right: 9%;
+    bottom: 18vw;
+  }
+}
+
+img#backpack {
+  width: 15vw;
+  bottom: 14vw;
+  right: 20px;
+  position: fixed;
+}
+
+div#stats {
+  background: white;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+  div#stats th {
+    text-align: left;
+  }
+  div#stats th, td {
+    padding-right: 20px;
+  }
