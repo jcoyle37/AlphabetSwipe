@@ -1,5 +1,5 @@
 html {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -11,16 +11,16 @@ html, body {
 }
 
 body {
-  margin: 3px;
+  margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(https://openclipart.org/image/800px/svg_to_png/99229/a-paisaje-boceto.png);
+  background: url(https://joecoyle.net/img/abswipe/ui/a-paisaje-boceto.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
