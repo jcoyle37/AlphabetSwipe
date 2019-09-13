@@ -19,7 +19,7 @@ function Backpack() {
     <img
       id='backpack'
       alt=''
-      src='https://openclipart.org/download/101599/mochila.svg'
+      src='https://joecoyle.net/img/abswipe/ui/mochila.svg'
     />
   );
 }
@@ -37,7 +37,7 @@ class App extends Component {
     });
 
     this.state = {
-      availableLetters: ['t', 'n', 'o', 'd', 'g', 'm', 'a', 's'], //only use words starting with these letters
+      availableLetters: ['t', 'n', 'o', 'd', 'g', 'm', 'a', 's', 'c', 'b', 'p', 'f', 'h'], //only use words starting with these letters
       numLettersToDisplay: 4, //number of letter buttons to show at bottom (note: 'availableLetters' array
                               //length must be equal to or greater than this number)
       numRounds: 10,
@@ -173,7 +173,7 @@ class App extends Component {
         )
       }
       else {
-        return (
+        return (          
           <div>
             <ChangeViewBtn
               text='View Stats'
